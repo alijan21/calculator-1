@@ -24,30 +24,96 @@ public class Main extends Activity
 {
     EditText editText;
     
-    Button button0,button1,button2,button3,
-                button4,button5,button6,button7,button8,button9,buttonPlus,buttonMinus,buttonMultiply,
-                buttonDivide,buttonEqual,buttonPoint,buttonDel,buttonReset,
-                button_sin,button_cos,button_tan,button_squared_2,button_root,button_del,button_dec,
-                button_bin,button_pi;
+    Button button_zero;
+    Button button_one;
+    Button button_two;
+    Button button_three;
+    Button button_four;
+    Button button_five;
+    Button button_six;
+    Button button_seven;
+    Button button_eight;
+    Button button_nine;
+    Button button_equal;
+    Button button_subtract;
+    Button button_plus;
+    Button button_division;
+    Button button_multiplication;
+    Button buttonPoint;
+    Button buttonDel;
+    Button buttonReset;
+    Button button_sin;
+    Button button_cos;
+    Button button_tan;
+    Button button_squared_2;
+    Button button_root;
+    Button button_del;
+    Button button_dec;
+    Button button_bin;
+    Button button_pi;
     
-    String sum="",one,oneAgain="",two,twoAgain="",three,threeAgain="",four,fourAgain="",five,fiveAgain="",
-                            six,sixAgain,seven,sevenAgain="",eight,eightAgain="",nine,nineAgain="",
-                            zero,plus,minus,multiply,divide,equal,point,del,reset,
-                            dec_string="",hex_string="",oct_string="",pi="3.1416";
+    String sum="";
+    String one;
+    String oneAgain="";
+    String two;
+    String twoAgain="";
+    String three;
+    String threeAgain="";
+    String four;
+    String fourAgain="";
+    String five;
+    String fiveAgain="";
+    String six;
+    String sixAgain;
+    String seven;
+    String sevenAgain="";
+    String  eight;
+    String eightAgain="";
+    String  nine;
+    String nineAgain="";
+    String zero,
+    String plus,
+    String minus,
+    String multiply,
+    String divide,
+    String equal,
+    String point,
+    String del,
+    String reset,
+    String dec_string="";
+    String hex_string="";
+    String oct_string="";
+    String pi="3.1416";
+    String EditTextMsg,
+    String bin_num;
+    String hex_num;
+    String oct_num;
     
-    Integer countOne=0,dec_num,unicode_value;
+    Integer countOne=0;
+    Integer dec_num;
+    Integer unicode_value;
     
-    Float result=0f,result_mul=1f,result_div=1f;
+    int pressCount=1;
+    int sumZero;
+    int dec_flag=0;
+    int c;
+    int i;
     
-    int pressCount=1,sumZero,dec_flag=0,c,i;
-
-    char press;
-    
-    String EditTextMsg,bin_num,hex_num,oct_num;
-    
+    Float result=0f;
+    Float result_mul=1f;
+    Float result_div=1f;
     Float floatEditTextMsg;
-    
-    Double doubleEditTextMsg,afterSin,after_cos,after_tan,toRadian_doubleEditTextMsg,after_squared_2,after_root,after_qube;
+   
+    char press;
+   
+    Double doubleEditTextMsg;
+    Double afterSin;
+    Double after_cos;
+    Double after_tan;
+    Double toRadian_doubleEditTextMsg;
+    Double after_squared_2;
+    Double after_root;
+    Double after_qube;
     
     Vibrator vibrator;
        
